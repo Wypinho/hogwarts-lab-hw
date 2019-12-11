@@ -1,7 +1,7 @@
 <h1><%= @student.format_name %></h1>
-<p><%= @student.house().name.capitalize %></p>
-<p><%= @student.age %></p>
+<h3><%= @student.house().name.capitalize %></h3>
+<h3><%= @student.age %></h3>
 <a href="/students/<%= @student.id %>/edit">Edit student details</a>
 <form class="" action="/students/<%= @student.id %>/death" method="post">
-  <input type="submit" value="Murder!!">
+  <input id="murder-button" class="button" type="submit" value="Murder!!">
 </form>
